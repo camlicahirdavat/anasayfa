@@ -1,0 +1,241 @@
+﻿<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Çamlıca Hırdavat</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+body{background:#ebebeb}
+header {
+     background-image: url("assets/images/kv5.jpg");
+     background-color: #5e020a;
+     background-repeat:no-repeat;
+     width: 100%;
+     background-size: cover;}
+#tel {max-width:48px;
+      min-height: 0px;
+      margin-top: -10px;
+      margin-left: -3px;
+      }
+.table{max-width: 33rem;}
+.dropdown-menu{background: #ebebeb;}
+.nav-item:hover{background:#ff4800;
+                color:#ffffff;}
+.fa-whatsapp, .fa-at, .fa-map-marked-alt, .fa-address-card, .fa-calendar-alt, .fa-fan {padding-left:7px;color: #ff4800;}
+.fa-at, .fa-map-marked-alt, .fa-address-card, .fa-calendar-alt{padding-right:7px;}
+.fa-yin-yang{color: #ff4800;}
+.fab{margin-right: 15px;}
+.mapouter{position:relative;text-align:center;height:54vh; min-height: 300px; min-width: 360px;width:70%; border:2px solid black; border-radius: 8px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+#gmap_canvas, #gcal_canvas {border:solid 1px #777;
+                            width:100%;
+                            height:100%;}
+a:link{text-decoration: none;}
+a:link:hover{text-decoration: underline;}
+a.link-secondary:link{}
+a.link-secondary:visited{}
+a.link-secondary:hover{background:transparent;
+                       color:#e6e6fa;}
+li.nav-item{border-left: 1px solid #cfd2d1; min-width: 100px;}
+li.nav-item:last-child{border-right: 1px solid #cfd2d1;}
+.banner1{font-size:3.5rem; color:#ffffff;float:left; width: 55vw;}
+.banner2{font-size:1.5rem; color:#ffffff; float:left; width: 40vw; margin-left:20vw;}
+
+        @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        .center{padding-left: 13vw;}
+
+        }
+        @media (max-width:767px){
+          li.nav-item{border-left: none;}
+          li.nav-item:last-child{border-right: none;}
+          .mapouter{min-width: 95vw;}
+          header {
+               background-image: url("assets/images/kv6.jpg");
+               background-color: #5e020a;
+               background-repeat:no-repeat;
+               background-size: cover;}
+               .banner1{font-size:2rem;
+                        float: left;}
+                footer{margin-top: 20px;}
+          }
+    </style>
+
+    <link href="pricing.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+     <link href="navbar-top-fixed.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a style="color:#ff4800" class="navbar-brand active" href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="1.html" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Hırdavat</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="1.html">Hırdavat Malzemeleri</a></li>
+                <li><a class="dropdown-item" href="1.html">Mekanik El Aletleri</a></li>
+                <li><a class="dropdown-item" href="1.html">Ölçü Aletleri</a></li>
+                <li><a class="dropdown-item" href="1.html">Testereler</a></li>
+                <li><a class="dropdown-item" href="1.html">Merdivenler</a></li>
+                <li><a class="dropdown-item" href="1.html">Kilitler</a></li>
+                <li><a class="dropdown-item" href="1.html">Takım Çantaları</a></li>
+                <li><a class="dropdown-item" href="1.html">Bahçe Aletleri</a></li>
+                <li><a class="dropdown-item" href="1.html">İş Güvenliği</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="2.html" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Ahşap&Hobi</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="2.html">Ahşap&Hobi Malzemeleri</a></li>
+              <li><a class="dropdown-item" href="2.html">Ahşap Obje ve Aksesuarlar</a></li>
+              <li><a class="dropdown-item" href="2.html">Boya</a></li>
+              <li><a class="dropdown-item" href="2.html">Vernik</a></li>
+              <li><a class="dropdown-item" href="2.html">Fırça</a></li>
+              <li><a class="dropdown-item" href="2.html">Stencil</a></li>
+              <li><a class="dropdown-item" href="2.html">Transfer&Dekopaj</a></li>
+            </ul>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="3.html">Boyalar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sosyal.html">Sosyal Medya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+<header style="margin-top: -20px !important" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
+  <div class="banner1">ÇAMLICA<span style="color:#0a0a0a">_</span>HIRDAVAT</div>
+  <!--  <div class="banner2">
+  <p style="font-size:1.25rem; color:#ffffff"> Cafer Camlica</p>
+    <p style="font-size:1.25rem; color:#ffffff">Adres ve telefon</p>
+    <p style="font-size:1.25rem; color:#ffffff">Adres ve telefon2</p>
+  </div> -->
+</header>
+
+<main class="container">
+<div class="center">
+  <h1> İletişim Kanalları</h1><br>
+
+  <a href="https://api.whatsapp.com/send?phone=905333110806"><i class="fab fa-whatsapp fa-2x"></i><strong>Whatsapp:</strong> +90 533 311 0806</a><br><br>
+  <a href="tel:+905333110806"><img id="tel" src="assets/images/telephone.png" alt="telephone icon"/><strong>Telefon:</strong> +90 232 878 9242</a><br><br>
+  <a href="mailto:cafercamlica@outlook.com"><i class="fas fa-at fa-2x"></i><strong> E-posta:</strong> cafercamlica@outlook.com</a><br><br>
+  <address><i class="far fa-address-card fa-2x"></i><strong>Adres:</strong> Atatürk Bulvarı No:40 Kemalpaşa/İzmir</address><br>
+  <p style="font-size:1.15rem"><i class="fas fa-map-marked-alt fa-2x"></i>Google Haritalarda yerimiz</p>
+  <div class="mapouter col-6 col-md">
+  <div class="gmap_canvas">
+      <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=So%C4%9Fukp%C4%B1nar%20Mh,%20%C4%B0n%C3%B6n%C3%BC%20Cd.%2040%20E,%2035730%20Kemalpa%C5%9Fa/%C4%B0zmir&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+</div>
+<p style="margin-top:20px !important; font-size:1.25rem"><i class="far fa-calendar-alt fa-2x"></i>Takvim</p>
+  <div class="mapouter">
+  <div class="gmap_canvas">
+<iframe id="gcal_canvas" src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FIstanbul&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0&amp;hl=tr"></iframe>
+      </div>
+  </div>
+<div style="margin-top:20px">
+  <i class="fas fa-fan fa-spin fa-3x"></i> <h3>Çalışma Saatleri</h3>
+  <table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Günler</th>
+      <th scope="col">Çalışma Saatleri</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Pazartesi</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Salı</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Çarşamba</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Perşembe</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Cuma</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Cumartesi</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+    <tr>
+      <th scope="row">Pazar</th>
+      <td colspan="2">08:00 – 20:30</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark container-fluid">
+    <div class="row">
+
+      <div class="col-6 col-md">
+        <h5>Hakkımızda</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Çamlıca Hırdavat</a></li>
+          <li><a class="link-secondary active" href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Markalar</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Markalar</a></li>
+          <li><a class="link-secondary" href="#">Markalar2</a></li>
+          <li><a class="link-secondary" href="#">Markalar3</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <i class="fas fa-yin-yang fa-refresh fa-spin fa-2x" style="margin-left:2.5rem"></i>
+        <p class="d-block mb-3 text-muted">&copy; 2021-2021 &copy;</p>
+          <p class="d-block mb-3 text-muted">Made by SunisSoft</p>
+
+      </div>
+    </div>
+  </footer>
+</main>
+</div>
+ <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/cb18de710e.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
