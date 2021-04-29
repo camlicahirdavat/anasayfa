@@ -76,7 +76,7 @@ li.nav-item:last-child{border-right: 1px solid #cfd2d1;}
     li.nav-item:last-child{border-right: none;}
     .mapouter{min-width: 93vw;}
     .carousel-item{max-height: 60vw;}
-    .center{font-size: 125%;}
+    .center{font-size: 120%;}
     .banner1{font-size:2rem;
                 float: left;}
     header {background-image: url("assets/images/kv6.jpg");
