@@ -1,0 +1,94 @@
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;}
+
+body {background:#ebebeb;}
+
+header {
+     background-image: url("assets/images/kv5.jpg");
+     background-color: #ff6f00;
+     background-repeat:no-repeat;
+     background-size: cover;
+     margin-top: -20px !important;}
+
+img{margin-top: 10px;
+    max-width: 210px;
+    min-height: 210px;}
+
+.table{max-width: 33rem;}
+
+.dropdown-menu{background: #ebebeb;}
+
+.nav-item:hover{background:#ff4800;
+                color:#ffffff;}
+
+.card{transition-duration:0.4s;}
+
+.fa-whatsapp, .fa-at, .fa-map-marked-alt, .fa-address-card, .fa-calendar-alt, .fa-fan, .fa-tty {padding-left:10px;color: #ff4800;}
+
+.fa-whatsapp, .fa-at, .fa-map-marked-alt, .fa-address-card, .fa-calendar-alt, .fa-tty{padding-right:10px;}
+
+.fa-yin-yang, .fa-paint-roller, .fa-paint-brush, .fa-brush, .fa-bell, .fa-address-book {color: #ff4800;}
+
+.fa-paint-roller:hover, .fa-paint-brush:hover, .fa-brush:hover, .fa-bell:hover, .fa-address-book:hover {color:#ffffff;}
+
+.mapouter{position:relative;text-align:center;height:54vh; min-height: 300px; min-width: 360px;width:70%; border:1px solid black; border-radius: 5px;}
+
+.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+
+#gmap_canvas, #gcal_canvas { width:100%;
+                             height:100%;}
+
+.card-body{opacity:0.9;}
+
+.card-body:hover{opacity:1;}
+
+.card:hover{transform: translate(0px,-15px);}
+
+.pricing-card-title:hover{color:#ff4800;}
+
+a:link{text-decoration: none;}
+
+a:link:hover{text-decoration: underline;}
+
+a.link-secondary:link{}
+
+a.link-secondary:visited{}
+
+a.link-secondary:hover{background: transparent;
+                       color:#e6e6fa;}
+
+li.nav-item{border-left: 1px solid #cfd2d1; min-width: 100px;}
+
+li.nav-item:last-child{border-right: 1px solid #cfd2d1;}
+
+.banner1{font-size:3.5rem; color:#ffffff;float:left; width: 55vw;}
+
+.btn {background:#ff4800 !important; border:1px solid #ff4800 !important;}
+
+.btn:hover{background: #1843f0 !important; border:1px solid  #1843f0 !important;}
+
+  @media (max-width:767px){
+    li.nav-item{border-left: none;}
+    li.nav-item:last-child{border-right: none;}
+    .mapouter{min-width: 92vw;}
+    .carousel-item{max-height: 60vw;}
+    .center{font-size: 125%;}
+    .banner1{font-size:2rem;
+                float: left;}
+    header {background-image: url("assets/images/kv6.jpg");
+            background-color: #5e020a;
+            background-repeat:no-repeat;
+            background-size: cover;}
+    footer{margin-top: 20px;}
+    }
+
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+                font-size: 3.5rem;}
+        .center{margin-left: 13vw;
+                font-size: 125%;}
+        }
